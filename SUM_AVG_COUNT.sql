@@ -3,4 +3,6 @@ SELECT COUNT(*) AS [NumberOfProducts],
 	   AVG([UnitPrice]) AS [AvgUnitPrice]
 FROM [dbo].[Products];
 
---New comment
+SELECT TOP 1 [UnitPrice]
+FROM [dbo].[Order Details]
+ORDER BY [UnitPrice] DESC;
